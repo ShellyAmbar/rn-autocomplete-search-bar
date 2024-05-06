@@ -1,6 +1,6 @@
 {
-  "name": "rn-autocomplete-searchbar",
-  "version": "1.0.1",
+  "name": "rn-autocomplete-search-bar",
+  "version": "1.0.2",
   "description": "A react native auto complete search bar",
   "main": "./search-bar/search-bar.tsx",
   "scripts": {

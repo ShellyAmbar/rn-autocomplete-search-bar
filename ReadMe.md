@@ -9,7 +9,7 @@
 ## How to use:
 
 ```
-import SearchBar from 'rn-autocomplete-searchbar';
+import SearchBar from 'rn-autocomplete-search-bar';
 
    <SearchBar
           isAutoCompleteSearch={false}
