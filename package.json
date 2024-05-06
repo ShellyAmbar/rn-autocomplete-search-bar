@@ -1,0 +1,32 @@
+{
+  "name": "rn-autocomplete-searchbar",
+  "version": "1.0.1",
+  "description": "A react native auto complete search bar",
+  "main": "./search-bar/search-bar.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShellyAmbar/rn-autocomplete-searchbar.git"
+  },
+  "peerDependencies": {
+    "react": "18.2.0~",
+    "react-native": "0.72.7~",
+    "react-native-svg": "^13.9.0",
+    "react-native-svg-transformer": "^1.1.0"
+  },
+  "keywords": [
+    "auto",
+    "autocomplete",
+    "search",
+    "searchbar",
+    "search-bar"
+  ],
+  "author": "Shelly Ambar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShellyAmbar/rn-autocomplete-searchbar/issues"
+  },
+  "homepage": "https://github.com/ShellyAmbar/rn-autocomplete-searchbar#readme"
+}
