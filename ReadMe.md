@@ -45,7 +45,7 @@ import SearchBar from 'rn-autocomplete-search-bar';
         />
 ```
 
-# Props -
+# SearchBar Props :
 
 | Name                     | Type                               |
 | ------------------------ | ---------------------------------- |
@@ -63,3 +63,12 @@ import SearchBar from 'rn-autocomplete-search-bar';
 | resultItemTextStyle      | ? ViewStyle                        |
 | isAutoCompleteSearch     | ? boolean                          |
 | icon                     | ? () => any                        |
+
+# SearchItem Props :
+
+| Name           | Type         |
+| -------------- | ------------ |
+| containerStyle | ? ViewStyle  |
+| textStyle      | ? TextStyle  |
+| onPress        | ? () => void |
+| text           | ? string     |
