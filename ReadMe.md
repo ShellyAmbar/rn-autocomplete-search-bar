@@ -47,19 +47,19 @@ import SearchBar from 'rn-autocomplete-searchbar';
 
 # Props -
 
-| Name                     | Type                             | Default |
-| ------------------------ | -------------------------------- | ------- |
-| viewContainerStyle       | ViewStyle                        |
-| searchbarContainerStyle  | ViewStyle                        |
-| buttonSearchStyle        | ViewStyle                        |
-| cancleButtonStyle        | ViewStyle                        |
-| textInputStyle           | TextStyle;                       |
-| onSelectResult           | (searchItem: SearchItem) => void |
-| onClickSearch            | (searchTerm: string) => void     |
-| onPressDelete            | () => void                       |
-| data                     | SearchItem[]                     |
-| resultsContainerStyle    | ViewStyle                        |
-| resultItemContainerStyle | ViewStyle                        |
-| resultItemTextStyle      | ViewStyle                        |
-| isAutoCompleteSearch     | boolean                          |
-| icon                     | () => any                        |
+| Name                     | Type                               |
+| ------------------------ | ---------------------------------- |
+| viewContainerStyle       | ? ViewStyle                        |
+| searchbarContainerStyle  | ? ViewStyle                        |
+| buttonSearchStyle        | ? ViewStyle                        |
+| cancleButtonStyle        | ? ViewStyle                        |
+| textInputStyle           | ? TextStyle;                       |
+| onSelectResult           | ? (searchItem: SearchItem) => void |
+| onClickSearch            | ? (searchTerm: string) => void     |
+| onPressDelete            | ? () => void                       |
+| data                     | ? SearchItem[]                     |
+| resultsContainerStyle    | ? ViewStyle                        |
+| resultItemContainerStyle | ? ViewStyle                        |
+| resultItemTextStyle      | ? ViewStyle                        |
+| isAutoCompleteSearch     | ? boolean                          |
+| icon                     | ? () => any                        |
