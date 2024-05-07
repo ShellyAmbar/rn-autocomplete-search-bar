@@ -1,6 +1,6 @@
 {
   "name": "rn-autocomplete-search-bar",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A react native auto complete search bar",
   "main": "./search-bar/search-bar.tsx",
   "scripts": {
@@ -21,7 +21,12 @@
     "autocomplete",
     "search",
     "searchbar",
-    "search-bar"
+    "search-bar",
+    "complete",
+    "react native",
+    "predictable",
+    "search bar",
+    "autocomplete search"
   ],
   "author": "Shelly Ambar",
   "license": "ISC",

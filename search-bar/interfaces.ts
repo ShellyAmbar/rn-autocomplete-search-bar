@@ -19,6 +19,7 @@ interface SearchBarProps extends TextInputProps {
   resultItemTextStyle?: ViewStyle;
   isAutoCompleteSearch?: boolean;
   icon?: () => any;
+  isCanclable?: boolean;
 }
 
 export {SearchItem, SearchBarProps};

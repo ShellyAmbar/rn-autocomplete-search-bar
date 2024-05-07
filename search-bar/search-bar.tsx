@@ -26,6 +26,7 @@ const SearchBar = ({
   resultItemTextStyle,
   resultItemContainerStyle,
   isAutoCompleteSearch = false,
+  isCanclable = true,
   icon,
   ...props
 }: SearchBarProps) => {
@@ -49,7 +50,7 @@ const SearchBar = ({
             {icon ? icon() : <Search width={20} height={20} />}
           </TouchableOpacity>
         )}
-        {searchTerm?.length > 0 && (
+        {searchTerm?.length > 0 && isCanclable && (
           <TouchableOpacity
             onPress={() => {
               setIsShowResults(false);

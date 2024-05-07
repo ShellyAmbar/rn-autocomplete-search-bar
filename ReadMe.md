@@ -63,6 +63,7 @@ import SearchBar from 'rn-autocomplete-search-bar';
 | resultItemTextStyle      | ? ViewStyle                        |
 | isAutoCompleteSearch     | ? boolean                          |
 | icon                     | ? () => any                        |
+| isCanclable              | ? boolean                          |
 
 # SearchItem Props :
 
