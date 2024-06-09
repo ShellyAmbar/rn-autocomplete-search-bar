@@ -64,6 +64,8 @@ import SearchBar from 'rn-autocomplete-search-bar';
 | isAutoCompleteSearch     | ? boolean                          |
 | icon                     | ? () => any                        |
 | isCanclable              | ? boolean                          |
+| debounceDelay            | ? number                           |
+| onDebounce               | ? (text: string) => void           |
 
 # SearchItem Props :
 

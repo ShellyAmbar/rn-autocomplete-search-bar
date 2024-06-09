@@ -20,6 +20,8 @@ interface SearchBarProps extends TextInputProps {
   isAutoCompleteSearch?: boolean;
   icon?: () => any;
   isCanclable?: boolean;
+  debounceDelay?: number;
+  onDebounce?: (text: string) => void;
 }
 
 export {SearchItem, SearchBarProps};

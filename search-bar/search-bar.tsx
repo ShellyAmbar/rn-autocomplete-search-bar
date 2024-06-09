@@ -5,13 +5,14 @@ import {
   FlatList,
   Keyboard,
 } from "react-native";
-import React from "react";
+import React, {useEffect} from "react";
 import Search from "../assets/images/search.svg";
 import Delete from "../assets/images/closeIconWhite.svg";
 import {SearchBarProps} from "./interfaces";
 import useSearchBar from "./hooks/useSearchBar";
 import Styles from "./search-bar.styles";
 import SearchItem from "./search-item/search-item";
+import useDebounce from "./hooks/useDebounce";
 const SearchBar = ({
   onClickSearch,
   onSelectResult,
@@ -28,6 +29,8 @@ const SearchBar = ({
   isAutoCompleteSearch = false,
   isCanclable = true,
   icon,
+  onDebounce,
+  debounceDelay = 1000,
   ...props
 }: SearchBarProps) => {
   const {
@@ -39,6 +42,12 @@ const SearchBar = ({
     isShowResults,
     setIsShowResults,
   } = useSearchBar({data: data ?? []});
+
+  const debounce = useDebounce({text: searchTerm, delay: debounceDelay});
+
+  useEffect(() => {
+    onDebounce && onDebounce(debounce);
+  }, [debounce]);
   return (
     <View style={[Styles.container, {...viewContainerStyle}]}>
       <View style={[Styles.searchbar, {...searchbarContainerStyle}]}>
